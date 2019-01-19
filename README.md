@@ -1,6 +1,7 @@
 ## Application workload monitoring using Prometheus Operator (PO)
 
-[] Yes, you're right, the name of the repo is **PO**metheus, ``pee-ou``... I was trying to highlight the fact that we are using the PO.
+| Yes, you're right, the name of the repo is **PO**metheus, ``pee-ou``...
+| ... I was trying to highlight the fact that we are using the PO.
 
 ### Contents
 

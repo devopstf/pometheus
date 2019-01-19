@@ -16,7 +16,7 @@ Applying these YAML files to your K8s/OKD/OCP cluster will be:
 
 ### Environment
 
-This demo sample has been tested using a single node OKD cluster deployed on an AWS-provided ``t2.large`` instance.
+This demo sample has been tested using a single-node OKD v3.11 cluster deployed on an AWS-provided ``t2.large`` instance.
 
 ### Step-by-Step Quickstart Guide
 
@@ -68,5 +68,5 @@ and the associated config file elements appear.
 ### References
 
 * [Getting started with Prometheus Operator](https://github.com/coreos/prometheus-operator/blob/master/Documentation/user-guides/getting-started.md)
-* [Design document for Prmetheus Operator](https://github.com/coreos/prometheus-operator/blob/master/Documentation/design.md)
+* [Design document for Prometheus Operator](https://github.com/coreos/prometheus-operator/blob/master/Documentation/design.md)
 

@@ -1,9 +1,10 @@
-## Application workload monitoring using Prometheus Operator
+## Application workload monitoring using Prometheus Operator (PO)
+
+[] Yes, you're right, the name of the repo is **PO**metheus, ``pee-ou``... I was trying to highlight the fact that we are using the PO.
 
 ### Contents
 
-The contents of this repo are composed by a series of K8s manifests that are intended to show how to leverage [Prometheus Operator](https://github.com/coreos/prometheus-operator)
-Applying these YAML files to your K8s/OKD/OCP cluster will be:
+The contents of this repo are composed by a series of K8s manifests that are intended to show how to leverage [Prometheus Operator](https://github.com/coreos/prometheus-operator). Apply these YAML files, that have been taken from [here](https://github.com/coreos/prometheus-operator/blob/master/Documentation/user-guides/getting-started.md) to your K8s/OKD/OCP cluster in order to:
 
 * Deploy Prometheus Operator (PO), including RBAC required objects, i.e. ``clusterRole``, ``clusterRoleBinding``, and ``serviceAccount``.
 * Deploy the sample app to be scrapped, and create the service.
@@ -57,6 +58,8 @@ kubectl apply -f pometheus-sample-prom-svc.yml
 At this point, you should be able to head to your Prometheus instance's URL for checking that the right targets are getting scrapped.
 Now you can add another service to be monitored from a different namespace/project. The only thing you need is to create a new
 ``serviceMonitor`` object within that namespace/project, and targeting it into the Prometheus object specs using the ``serviceMonitorNamespaceSelector``.
+
+In my example I'm creating such a ``serviceMonitor`` object by applying the ``pometheus-sample-sm-demoapp.yml`` manifest that is referring to a ``demoapplication``namespace, and a ``restservice`` service.
 
 You can do that editing the Prometheus object:
 

@@ -61,7 +61,7 @@ At this point, you should be able to head to your Prometheus instance's URL for 
 Now you can add another service to be monitored from a different namespace/project. The only thing you need is to create a new
 ``serviceMonitor`` object within that namespace/project, and targeting it into the Prometheus object specs using the ``serviceMonitorNamespaceSelector``.
 
-In my example I'm creating such a ``serviceMonitor`` object by applying the ``pometheus-sample-sm-demoapp.yml`` manifest that is referring to a ``demoapplication``namespace, and a ``restservice`` service.
+In my example I'm creating such a ``serviceMonitor`` object by applying the ``pometheus-sample-sm-demoapp.yml`` manifest that is referring to a ``demoapplication``namespace, and a service, labeled as ``restservice`` that is associated to [this Springboot demo application from Consol Labs](https://github.com/ConSol/springboot-monitoring-example).
 
 You can do that editing the Prometheus object:
 
@@ -74,4 +74,6 @@ and the associated config file elements appear.
 
 * [Getting started with Prometheus Operator](https://github.com/coreos/prometheus-operator/blob/master/Documentation/user-guides/getting-started.md)
 * [Design document for Prometheus Operator](https://github.com/coreos/prometheus-operator/blob/master/Documentation/design.md)
+* [Consol Labs Springboot demo application with Prometheus metrics endpoint](https://github.com/ConSol/springboot-monitoring-example)
+* [ConSol Open Monitoring Distribution (OMD) Labs Edition](https://github.com/ConSol/omd)
 

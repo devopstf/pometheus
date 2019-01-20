@@ -120,6 +120,7 @@ spec:
         beta.kubernetes.io/os: linux
       securityContext:
         runAsNonRoot: true
+#        runAsUser: 65534
       serviceAccountName: prometheus-operator
 ---
 apiVersion: v1

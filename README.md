@@ -20,6 +20,7 @@ The contents of this repo are composed by a series of K8s manifests that are int
 
 This demo sample has been tested using a single-node OKD v3.11 cluster deployed on an AWS-provided ``t2.large`` instance.
 I've been using the ``default`` namespace, and the ``system:admin`` privileged user.
+Prometheus Operator ``v0.27.0``
 
 ### Step-by-Step Quickstart Guide
 
